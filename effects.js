@@ -12,30 +12,28 @@ function eventTable(){
 eventTable();
 
 function sortTable(indexCell, type){
+    var grid = document.getElementById('grid');
     var tBody = document.getElementById('bodyTable');
-
     var compare;
     var rowsArray = [].slice.call(tBody.rows);
     if (type == 'number') {
-
-    compare = function(rowA, rowB){
-        return rowA.cells[indexCell].innerHTML - rowB.cells[indexCell].innerHTML;
-
-    }
-    }
-    else {
         compare = function(rowA, rowB){
-           if (rowA.cells[indexCell].innerHTML > rowB.cells[indexCell].innerHTML)
+        return rowA.cells[indexCell].innerHTML - rowB.cells[indexCell].innerHTML;
+    }
+    }
+    else
+    {
+    compare = function(rowA, rowB){
+        if (rowA.cells[indexCell].innerHTML > rowB.cells[indexCell].innerHTML)
            {return 1}
-           else if (rowA.cells[indexCell].innerHTML < rowB.cells[indexCell].innerHTML)
+        else if (rowA.cells[indexCell].innerHTML < rowB.cells[indexCell].innerHTML)
            {return -1}
-
-    }}
+     }
+    }
 rowsArray.sort(compare);
-
+grid.removeChild(tBody);
     for (var i = 0; i < rowsArray.length; i++) {
         tBody.appendChild(rowsArray[i]);
     }
-
-
+    grid.appendChild(tBody);
 }
