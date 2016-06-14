@@ -21,11 +21,11 @@
         transaction history using the form below.</p>
         <div class="all-buttons">
             <div class="button-text1"><p>Date From</p>
-            <form><input type="text" value="10-02-2016"></form>
+            <form><input class="icon" type="text" value="10-02-2016"></form>
             </div>
 
             <div class="button-text1"><p>Date To</p>
-            <form><input type="text" value="10-06-2016"></form>
+            <form><input class="icon" type="text" value="10-06-2016"></form>
             </div>
 
             <div class="button-text1"><p>Setting Amount</p>
@@ -33,7 +33,7 @@
             </div>
 
             <div class="button-text1"><p>Setting Currency</p>
-            <form><input type="text" value=""></form>
+            <form><input class="icon" type="text" value=""></form>
             </div>
 
             <div class="button-text1"><p>Rate</p>
@@ -50,7 +50,7 @@
                 <form><input type="text" value=""></form>
             </div>
             <div class="button-text1"><p>Receiving Currency</p>
-                <form><input type="text" value=""></form>
+                <form><input class="icon" type="text" value=""></form>
             </div>
 
             <div class="button-text1" style="opacity: 0">
@@ -78,11 +78,144 @@
 <div class="inform-tables">
     <h3> 120 Transactions</h3>
     <div class="total-sending">
+        <div class="report-total total"><p>Report Total (Sending) 84,582,152.00 GBP</p></div>
+        <div class="page-total total"><p>Page Total (Sending) 20,456,780.00 GBP</p></div>
+        <div class="records-per-page total">
+            <p>Records Per Page</p>
+
+            <form><input type="text" value="10"></form>
+        </div>
+
+
 
     </div>
     <div class="table-main">
         <table>
-            
+            <thead id="tableHead">
+            <tr>
+                <th data-type="number"><div class="icon-white"></div>Transaction Ref. Number</th>
+                <th data-type="date"><div class="icon-white"></div>Transaction Date</th>
+                <th data-type="name"><div class="icon-white"></div>Beneficiary Name</th>
+                <th data-type="sendAmount"><div class="icon-white"></div>Sending Amount</th>
+                <th data-type="sendCurrency"><div class="icon-white"></div>Sending Currency</th>
+                <th data-type="recAmount"><div class="icon-white"></div>Received Amound</th>
+                <th data-type="recCurrency"><div class="icon-white"></div>Receiving Currency</th>
+                <th data-type="rate"><div class="icon-white"></div>Rate</th>
+            </tr>
+            </thead>
+            <tbody id="bodyTable">
+            <tr id="n1">
+                <td class="inform">12345</td>
+                <td class="inform">10-06-2016</td>
+                <td class="inform">Julia Stown</td>
+                <td class="inform">100,000.00</td>
+                <td class="inform">GBP</td>
+                <td class="inform">125,920.00</td>
+                <td class="inform">EUR</td>
+                <td class="inform">1.2592</td>
+
+            </tr>
+            <tr id="n2">
+                <td class="inform">12344</td>
+                <td class="inform">10-06-2016</td>
+                <td class="inform">Julia Stown</td>
+                <td class="inform">100,000.00</td>
+                <td class="inform">GBP</td>
+                <td class="inform">125,920.00</td>
+                <td class="inform">EUR</td>
+                <td class="inform">1.2592</td>
+
+            </tr>
+            <tr id="n3">
+                <td class="inform">12343</td>
+                <td class="inform">10-06-2016</td>
+                <td class="inform">JuBob Stown</td>
+                <td class="inform">100,000.00</td>
+                <td class="inform">GBP</td>
+                <td class="inform">125,920.00</td>
+                <td class="inform">EUR</td>
+                <td class="inform">1.2592</td>
+
+            </tr>
+            <tr id="n4">
+                <td class="inform">12342</td>
+                <td class="inform">10-06-2016</td>
+                <td class="inform">Julia Stown</td>
+                <td class="inform">100,000.00</td>
+                <td class="inform">GBP</td>
+                <td class="inform">125,920.00</td>
+                <td class="inform">EUR</td>
+                <td class="inform">1.2592</td>
+
+            </tr>
+            <tr id="n5">
+                <td class="inform">12341</td>
+                <td class="inform">10-06-2016</td>
+                <td class="inform">Julia Stown</td>
+                <td class="inform">100,000.00</td>
+                <td class="inform">GBP</td>
+                <td class="inform">125,920.00</td>
+                <td class="inform">EUR</td>
+                <td class="inform">1.2592</td>
+
+            </tr>
+            <tr id="n6">
+                <td class="inform">12340</td>
+                <td class="inform">10-06-2016</td>
+                <td class="inform">Julia Stown</td>
+                <td class="inform">99,000.00</td>
+                <td class="inform">GBP</td>
+                <td class="inform">125,920.00</td>
+                <td class="inform">EUR</td>
+                <td class="inform">1.2592</td>
+
+            </tr>
+            <tr id="n7">
+                <td class="inform">12339</td>
+                <td class="inform">10-06-2016</td>
+                <td class="inform">Julia Stown</td>
+                <td class="inform">100,000.00</td>
+                <td class="inform">GBP</td>
+                <td class="inform">125,920.00</td>
+                <td class="inform">EUR</td>
+                <td class="inform">1.2592</td>
+
+            </tr>
+            <tr id="n8">
+                <td class="inform">12338</td>
+                <td class="inform">10-06-2016</td>
+                <td class="inform">Julia Stown</td>
+                <td class="inform">100,000.00</td>
+                <td class="inform">GBP</td>
+                <td class="inform">125,920.00</td>
+                <td class="inform">EUR</td>
+                <td class="inform">1.2492</td>
+
+            </tr>
+            <tr id="n9">
+                <td class="inform">12337</td>
+                <td class="inform">10-06-2016</td>
+                <td class="inform">Julia Stown</td>
+                <td class="inform">100,000.00</td>
+                <td class="inform">GBP</td>
+                <td class="inform">125,920.00</td>
+                <td class="inform">EUR</td>
+                <td class="inform">1.2592</td>
+
+            </tr>
+            <tr id="n10">
+                <td class="inform">12336</td>
+                <td class="inform">10-06-2016</td>
+                <td class="inform">Julia Stown</td>
+                <td class="inform">100,000.00</td>
+                <td class="inform">GBP</td>
+                <td class="inform">125,920.00</td>
+                <td class="inform">EUR</td>
+                <td class="inform">1.2102</td>
+
+            </tr>
+            </tbody>
+
         </table>
     </div>
 
@@ -95,6 +228,6 @@
 
 
 </div>
-
+<script type = "text/javascript" src="effects.js"></script>
 </body>
 </html>
