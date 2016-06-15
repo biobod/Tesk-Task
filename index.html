@@ -9,7 +9,40 @@
 <div id="wrapper">
 <div id="navbar">
     <div class="nav-inform"></div>
-    <div class="nav-menu"></div>
+    <div class="nav-menu">
+        <div class="menu">
+            <div class="logo"></div>
+            <div class="menu-point">
+                <div class="menu-ic" id="menu-ic-1"></div>
+                <div class="menu-point-name"><p>Send Money</p></div>
+            </div>
+            <div class="menu-point">
+                <div class="menu-ic" id="menu-ic-2"></div>
+                <div class="menu-point-name"><p>Card Balance</p></div>
+            </div>
+            <div class="menu-point">
+                <div class="menu-ic" id="menu-ic-3"></div>
+                <div class="menu-point-name"><p>Transaction History</p></div>
+            </div>
+            <div class="menu-point">
+                <div class="menu-ic" id="menu-ic-4"></div>
+                <div class="menu-point-name"><p>Beneficiares</p></div>
+            </div>
+            <div class="menu-point">
+                <div class="menu-ic" id="menu-ic-5"></div>
+                <div class="menu-point-name"><p>Change Password</p></div>
+            </div>
+            <div class="menu-point">
+                <div class="menu-ic" id="menu-ic-6"></div>
+                <div class="menu-point-name"><p>Contatc Us</p></div>
+            </div>
+            <div class="menu-point">
+                <div class="menu-ic" id="menu-ic-7"></div>
+                <div class="menu-point-name"><p>FAQs</p></div>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 <div id="page1">
@@ -22,11 +55,11 @@
         <div class="all-buttons">
             <div class="buttons-left-block">
             <div class="button-text1 left-button"><p>Date From</p>
-            <form><input class="icon" type="text" value="10-02-2016"></form>
+            <form><input class="icon" type="date" value="2016-06-10"></form>
             </div>
 
             <div class="button-text1 left-button"><p>Date To</p>
-            <form><input class="icon" type="text" value="10-06-2016"></form>
+            <form><input class="icon" type="date" value="2016-02-10"></form>
             </div>
 
             <div class="button-text1 left-button"><p>Trans. Ref. Number</p>
@@ -45,7 +78,11 @@
             </div>
 
             <div class="button-text1 right-button"><p>Setting Currency</p>
-            <form><input class="icon" type="text" value=""></form>
+            <form><select>
+                <option>USD</option>
+                <option>GBP</option>
+                <option>EUR</option>
+            </select></form>
             </div>
 
             <div class="button-text1 right-button"><p>Rate</p>
@@ -57,7 +94,11 @@
              <form><input type="text" value=""></form>
             </div>
             <div class="button-text1 right-button"><p>Receiving Currency</p>
-            <form><input class="icon" type="text" value=""></form>
+            <form><select>
+                <option></option>
+                <option></option>
+                <option></option>
+            </select></form>
             </div>
 
             </div>
@@ -67,11 +108,11 @@
 
             <div class="down-button">
             <div class="button-text1">
-                <form><button style="background-color: #464849; color: #ffffff">Search</button></form>
+                <form><input type="submit" value="Search" style="background-color: #464849; color: #ffffff"></form>
             </div>
 
             <div class="button-text1">
-                <form><button style="background-color: #bcd8fa; color: #ffffff">Detail Filter</button></form>
+                <form><input type="submit" value="Detail Filter" style="background-color: #bcd8fa; color: #ffffff"></form>
             </div>
             </div>
 
@@ -88,7 +129,7 @@
         <div class="records-per-page total">
             <p>Records Per Page</p>
 
-            <form><input type="text" value="10"></form>
+            <form><input type="number" value="10"></form>
         </div>
 
 
@@ -237,8 +278,8 @@
     <div id="foolNext" class="button-for-pages"></div>
 
     <div class="export-to-excel">
-        <form><button style="background-color: #464849; color: #ffffff">Export To Excel
-        </button>
+        <form><input type="submit" value="Export To Excel" style="background-color: #464849; color: #ffffff">
+
         </form>
     </div>
 
@@ -249,7 +290,19 @@
 
 <div class="footer">
 <div class="footer-center">
+<div class="footer-up">
 
+</div>
+    <div class="footer-down">
+        <div class="authors">
+            <p>PFX Online is a registered trademark of Premier FX Ltd. Copyright (c) 2016 Preimer FX
+            Ltd. All rights reserved.</p>
+        </div>
+        <div class="footer-policy"><p>Cookie Policy</p></div>
+        <div class="footer-policy"><p>Privacy Policy</p></div>
+        <div class="footer-policy"><p>Terms & Conditions</p></div>
+
+    </div>
 </div>
 </div>
 
